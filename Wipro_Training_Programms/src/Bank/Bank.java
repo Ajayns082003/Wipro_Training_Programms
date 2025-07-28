@@ -10,7 +10,6 @@ public interface Bank {
         System.out.println("Account Type: Generic Bank Account");
     }
 
-  
     default void executeTransaction(String type, double amount) {
         if (!Bank.isValid(amount)) {
             System.out.println("Invalid amount: " + amount);
