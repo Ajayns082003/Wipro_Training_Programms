@@ -3,10 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="Test_NG01.Annotations"/>
       <class name="Test_NG04.DemoShop_Task"/>
+      <class name="TEST_NG02.TestDemo"/>
       <class name="TEST_NG02.OpenCart_ShoppingCart"/>
+      <class name="Test_NG01.Practice_DemoShop"/>
       <class name="Test_NG03.TutorailsNinja_Annotations_Assert"/>
-      <class name="TEST_NG02.Practice_DemoShop"/>
       <class name="Test_NG03.TutorialsNinja_Test"/>
     </classes>
   </test> <!-- Test -->

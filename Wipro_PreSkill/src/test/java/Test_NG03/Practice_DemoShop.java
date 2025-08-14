@@ -1,4 +1,4 @@
-package TEST_NG02;
+package Test_NG03;
 
 import java.time.Duration;
 
