@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml</span>
+                    <span>C:\Users\ruler\AppData\Local\Temp\testng-eclipse-1358723132\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,12 +103,12 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_NG03.Practice_DemoShop" class="method navigator-link" hash-for-method="clickBook">clickBook</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Framework.LoginTest" class="method navigator-link" hash-for-method="testLogin(wronguser@gmail.com, wrongpass)">testLogin(wronguser@gmail.com, wrongpass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_NG03.Practice_DemoShop" class="method navigator-link" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Framework.LoginTest" class="method navigator-link" hash-for-method="testLogin(testuser1@gmail.com, password1)">testLogin(testuser1@gmail.com, password1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -126,22 +126,24 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">Test_NG03.Practice_DemoShop</span>
+              <span class="class-name">Selenium_Framework.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickBook">
-                  </a> <!-- clickBook -->
-                  <span class="method-name">clickBook</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+                  <a name="testLogin(wronguser@gmail.com, wrongpass)">
+                  </a> <!-- testLogin(wronguser@gmail.com, wrongpass) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(wronguser@gmail.com,wrongpass)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -166,17 +168,19 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="logIn">
-                  </a> <!-- logIn -->
-                  <span class="method-name">logIn</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+                  <a name="testLogin(testuser1@gmail.com, password1)">
+                  </a> <!-- testLogin(testuser1@gmail.com, password1) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(testuser1@gmail.com,password1)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -204,16 +208,23 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ruler\AppData\Local\Temp\testng-eclipse-1358723132\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;param-val-not-found&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test_NG03.Practice_DemoShop&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.LoginTest&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.ConfigReader&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.BaseTest&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.TestListener&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.ExcelUtils&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.DriverManager&quot;/&gt;
+      &lt;class name=&quot;Selenium_Framework.LoginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -227,7 +238,7 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Default test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,22 +248,6 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">clickBook</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">logIn</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -271,12 +266,12 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickBook')
-data.setCell(0, 2, 'Test_NG03.Practice_DemoShop')
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'Selenium_Framework.LoginTest')
 data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logIn')
-data.setCell(1, 2, 'Test_NG03.Practice_DemoShop')
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'Selenium_Framework.LoginTest')
 data.setCell(1, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -307,6 +302,14 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Selenium_Framework.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(param-val-not-found)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

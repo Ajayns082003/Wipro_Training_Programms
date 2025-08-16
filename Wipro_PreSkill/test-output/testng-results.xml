@@ -2,33 +2,33 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-15T00:12:10 IST" name="Default suite" finished-at="2025-08-15T00:12:10 IST" duration-ms="61">
+  <suite started-at="2025-08-16T16:56:35 IST" name="Default suite" finished-at="2025-08-16T16:56:35 IST" duration-ms="68">
     <groups>
-      <group name="regression">
-        <method signature="Practice_DemoShop.clickBook()[pri:0, instance:Test_NG03.Practice_DemoShop@24569dba]" name="clickBook" class="Test_NG03.Practice_DemoShop"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="Practice_DemoShop.logIn()[pri:0, instance:Test_NG03.Practice_DemoShop@24569dba]" name="logIn" class="Test_NG03.Practice_DemoShop"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-08-15T00:12:10 IST" name="Default test" finished-at="2025-08-15T00:12:10 IST" duration-ms="61">
-      <class name="Test_NG03.Practice_DemoShop">
-        <test-method is-config="true" signature="launchWebShop(java.lang.String,java.lang.String)[pri:0, instance:Test_NG03.Practice_DemoShop@24569dba]" started-at="2025-08-15T00:12:10 IST" name="launchWebShop" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755196930768" status="FAIL">
-          <exception class="org.testng.TestNGException">
+    <test started-at="2025-08-16T16:56:35 IST" name="Default test" finished-at="2025-08-16T16:56:35 IST" duration-ms="68">
+      <class name="Selenium_Framework.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Selenium_Framework.LoginTest@5fb759d6]" started-at="2025-08-16T16:56:35 IST" name="setUp" finished-at="2025-08-16T16:56:35 IST" duration-ms="12" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param-val-not-found]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "Selenium_Framework.DriverManager.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "Selenium_Framework.DriverManager.driver" is null
+at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -49,26 +49,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchWebShop -->
-        <test-method signature="clickBook()[pri:0, instance:Test_NG03.Practice_DemoShop@24569dba]" started-at="2025-08-15T00:12:10 IST" name="clickBook" finished-at="2025-08-15T00:12:10 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:Selenium_Framework.LoginTest@5fb759d6]" started-at="2025-08-16T16:56:35 IST" name="testLogin" data-provider="loginData" finished-at="2025-08-16T16:56:35 IST" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "Selenium_Framework.DriverManager.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "Selenium_Framework.DriverManager.driver" is null
+at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -89,26 +100,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickBook -->
-        <test-method signature="logIn()[pri:0, instance:Test_NG03.Practice_DemoShop@24569dba]" started-at="2025-08-15T00:12:10 IST" name="logIn" finished-at="2025-08-15T00:12:10 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:Selenium_Framework.LoginTest@5fb759d6]" started-at="2025-08-16T16:56:35 IST" name="testLogin" data-provider="loginData" finished-at="2025-08-16T16:56:35 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wronguser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "Selenium_Framework.DriverManager.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "Selenium_Framework.DriverManager.driver" is null
+at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -129,11 +151,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn -->
-      </class> <!-- Test_NG03.Practice_DemoShop -->
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium_Framework.LoginTest@5fb759d6]" started-at="2025-08-16T16:56:35 IST" name="tearDown" finished-at="2025-08-16T16:56:35 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium_Framework.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

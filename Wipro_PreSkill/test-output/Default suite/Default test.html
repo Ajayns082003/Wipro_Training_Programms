@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 15 00:12:10 IST 2025</td>
+<td>Started on:</td><td>Sat Aug 16 16:56:35 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (61 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (68 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_NG03.Practice_DemoShop.launchWebShop()'><b>launchWebShop</b><br>Test class: Test_NG03.Practice_DemoShop</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+<td title='Selenium_Framework.LoginTest.setUp()'><b>setUp</b><br>Test class: Selenium_Framework.LoginTest<br>Parameters: param-val-not-found</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -103,15 +104,16 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace177140066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace177140066'><pre>org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1261198850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261198850'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -131,8 +133,22 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>-1755196930</td>
-<td>Test_NG03.Practice_DemoShop@24569dba</td></tr>
+<td>0</td>
+<td>Selenium_Framework.LoginTest@5fb759d6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium_Framework.LoginTest.tearDown()'><b>tearDown</b><br>Test class: Selenium_Framework.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Selenium_Framework.LoginTest@5fb759d6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -143,15 +159,16 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_NG03.Practice_DemoShop.clickBook()'><b>clickBook</b><br>Test class: Test_NG03.Practice_DemoShop</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+<td title='Selenium_Framework.LoginTest.testLogin()'><b>testLogin</b><br>Test class: Selenium_Framework.LoginTest<br>Parameters: wronguser@gmail.com, wrongpass</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -170,15 +187,16 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace996125997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace996125997'><pre>org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+</pre></div><a href='#' onClick='toggleBox("stack-trace330551672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330551672'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -199,17 +217,18 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Test_NG03.Practice_DemoShop@24569dba</td></tr>
+<td>Selenium_Framework.LoginTest@5fb759d6</td></tr>
 <tr>
-<td title='Test_NG03.Practice_DemoShop.logIn()'><b>logIn</b><br>Test class: Test_NG03.Practice_DemoShop</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+<td title='Selenium_Framework.LoginTest.testLogin()'><b>testLogin</b><br>Test class: Selenium_Framework.LoginTest<br>Parameters: testuser1@gmail.com, password1</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -228,15 +247,16 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace38544126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace38544126'><pre>org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeClass on method launchWebShop but has not been marked @Optional or defined
-in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+</pre></div><a href='#' onClick='toggleBox("stack-trace644052207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace644052207'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;Selenium_Framework.DriverManager.driver&quot; is null
+	at Selenium_Framework.DriverManager.getDriver(DriverManager.java:17)
+	at Selenium_Framework.BaseTest.setUp(BaseTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -257,7 +277,7 @@ in C:\Users\ruler\AppData\Local\Temp\testng-eclipse--859737333\testng-customsuit
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Test_NG03.Practice_DemoShop@24569dba</td></tr>
+<td>Selenium_Framework.LoginTest@5fb759d6</td></tr>
 </table><p>
 </body>
 </html>
