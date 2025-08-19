@@ -1,0 +1,76 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19a8fab06e7541fac4a4ae8bd10346c621d03ddc
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+<<<<<<< HEAD
+	<groupId>com.TestNG</groupId>
+	<artifactId>Wipro_PreSkill</artifactId>
+=======
+	<groupId>com.Selenium</groupId>
+	<artifactId>Wipro_Selenium</artifactId>
+>>>>>>> 19a8fab06e7541fac4a4ae8bd10346c621d03ddc
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.11.0</version>
+			<scope>test</scope>
+		</dependency>
+
+<<<<<<< HEAD
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+=======
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+>>>>>>> 19a8fab06e7541fac4a4ae8bd10346c621d03ddc
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.34.0</version>
+		</dependency>
+<<<<<<< HEAD
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.9.2</version>
+		</dependency>
+=======
+		
+		<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.9.2</version>
+</dependency>
+>>>>>>> 19a8fab06e7541fac4a4ae8bd10346c621d03ddc
+
+		<dependency>
+			<groupId>com.webdriver</groupId>
+			<artifactId>WebDriver_</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+<<<<<<< HEAD
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+
+		<!-- Apache POI for .xlsx (OOXML) -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.5</version>
+		</dependency>
+=======
+>>>>>>> 19a8fab06e7541fac4a4ae8bd10346c621d03ddc
+	</dependencies>
+
+</project>
