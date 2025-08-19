@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Handling_Different_Controllers.WebControlsTest">
+      <class name="testDemo.DatePicker">
         <methods>
-          <include name="handleRadioButton"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testDatePicker"/>
         </methods>
-      </class> <!-- Handling_Different_Controllers.WebControlsTest -->
+      </class> <!-- testDemo.DatePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
