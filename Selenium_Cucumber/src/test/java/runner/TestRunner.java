@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
     monochrome = true,			 // Make the output more readable 
    // tags = "@smoke" ,
     //tags ="@smoke and @positive",
-    tags = "@regression and @negative"
+    tags = "@auth"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
