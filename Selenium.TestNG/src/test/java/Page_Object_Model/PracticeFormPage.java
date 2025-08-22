@@ -1,4 +1,4 @@
-package Project_Object_Model;
+package Page_Object_Model;
 
 import java.time.Duration;
 import org.openqa.selenium.By;

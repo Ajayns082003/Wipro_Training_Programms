@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DatePicker_and_Iframes.IFrames">
+      <class name="DataProviders_2DArray.DataProvider2">
         <methods>
-          <include name="Frame2"/>
-          <include name="launchBrowser"/>
+          <include name="afterClass"/>
+          <include name="RegisterNewUser"/>
+          <include name="LaunchBrowser"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- DatePicker_and_Iframes.IFrames -->
+      </class> <!-- DataProviders_2DArray.DataProvider2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

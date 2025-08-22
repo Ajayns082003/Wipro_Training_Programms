@@ -1,4 +1,4 @@
-package Project_Object_Model;
+package Page_Object_Model;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
