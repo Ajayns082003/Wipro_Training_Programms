@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
         String welcomeText = homePage.getWelcomeText();
 
         // Step 3: Assert that login is successful
-        Assert.assertTrue(welcomeText.contains("Welcome"),
+        Assert.assertTrue(welcomeText.contains("Welcome to all"),
             "Login failed - Welcome text not found!");
     }
 }
