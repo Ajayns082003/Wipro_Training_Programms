@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataProviders_2DArray.DataProvider2">
+      <class name="Tests.LoginTest">
         <methods>
-          <include name="afterClass"/>
-          <include name="RegisterNewUser"/>
-          <include name="LaunchBrowser"/>
-          <include name="Login"/>
+          <include name="verifyValidLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- DataProviders_2DArray.DataProvider2 -->
+      </class> <!-- Tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
